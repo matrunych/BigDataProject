@@ -39,20 +39,6 @@ def event_details_by_group(group):
     return res
 
 
-@app.route('/events_for_last_hours/<int:n>', methods=["GET"])
-def events_for_last_hours(n):
-    pass
-
-
-@app.route('/groupss_for_last_hours/<int:n>', methods=["GET"])
-def groups_for_last_hours(n):
-    pass
-
-
-@app.route('/most_popular_topic_for_last_hours/<int:n>', methods=["GET"])
-def most_popular_topic(n):
-    pass
-
 
 if __name__ == '__main__':
     db = Cassandra(user='cassandra', password='password', ip_address='34.69.185.95')
